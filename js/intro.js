@@ -1,5 +1,5 @@
 // Make sure you open up the console in your browser!
-console.log("Hello");
+console.log("That's confusing");
 
 /*
 This is a multiline
@@ -13,7 +13,7 @@ var myName = "Ben Joshua Abbott";
 console.log(myName.length);
 
 // Variable that holds my age
-var myAge = 20;
+var myAge = 24;
 
 // If the user is older than 21
 if( myAge >= 21 ) {
@@ -31,12 +31,27 @@ if( myName.length == 0 ) {
 	console.log("Your name must be at most 10 characters. You have written " + myName.length);
 }
 
+// An array (list, collection etc) of people
+var people = ["Ben", "Andrew", "Mel"];
 
+console.log( people );
 
+console.log( people[2] );
 
+// Loop over all the people in the people array
+// and display their name in the console
+// i = iterations (counter)
+for( var i = 0; i < people.length; i++ ) {
+	console.log( people[i] );
+}
 
+// Tell JavaScript to find the button with ID = hello
+var helloButton = document.querySelector("#hello");
 
-
+// Listen for clicks on the hello button
+helloButton.onclick = function(){
+	alert('Hello!');
+}
 
 
 
